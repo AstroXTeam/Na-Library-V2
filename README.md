@@ -1,4 +1,4 @@
-# redz Library V4
+# Na Library V2 
 ## Library loadstring
 ```lua
 local ui_link = "https://raw.githubusercontent.com/AstroXTeam/Na-Library-V2/refs/heads/main/Source.lua"
@@ -12,20 +12,6 @@ local a = loadstring(game:HttpGet(ui_link))()
 Create a Window
 ```lua
 local a = a:Window("AstroXHub")
-```
-
-## Notification
-Create a Notification
-```lua
-local Notify = Library:MakeNotify({
-  Title = "Notification",
-  Text = "This is a Notification",
-  Time = 5
-})
-
---[[
-  Notify:Wait() -- Wait for the notification to end
-]]
 ```
 
 ## Tab
@@ -79,23 +65,4 @@ Main:Slider("hi", 0, 100, 30, function()
     
 end)
 ```
-
-Create a Minimize Button
-```lua
-Window:AddMinimizeButton({
-  Button = {
-    -- Button Properties
-    Image = "rbxassetid://15298567397"
-  },
-  UICorner = {true,
-    -- Corner Properties
-    CornerRadius = UDim.new(0.5, 0)
-  },
-  UIStroke = {false, {
-    -- Stroke Properties
-  }}
-})
-```
-
-
 

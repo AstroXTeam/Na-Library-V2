@@ -143,7 +143,7 @@ function a:Window(f, f, f)
     local f = f or Enum.KeyCode.RightControl
     local f = string.gsub(tostring(f), "Enum.KeyCode.", "")
     local f = Instance.new("ScreenGui")
-    f.Name = "SPEEDWAVEUI"
+    f.Name = "AstroXXX"
     f.Parent = game.CoreGui
     f.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     local i = Instance.new("Frame")
@@ -189,7 +189,7 @@ function a:Window(f, f, f)
     j.Position = UDim2.new(0, 30, 0.05, 0)
     j.Size = UDim2.new(0, 255, 0.05, 25)
     j.Font = Enum.Font.GothamBold
-    j.Text = "SPEED WAVE"
+    j.Text = "AstroXHub [ 𝚃𝚛𝚘𝚕𝚕 ] "
     j.TextSize = 15.000
     j.TextColor3 = Color3.fromRGB(255, 255, 255)
     j.TextXAlignment = Enum.TextXAlignment.Left

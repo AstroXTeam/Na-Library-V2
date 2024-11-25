@@ -65,6 +65,14 @@ Main:Slider("hi", 0, 100, 30, function()
     
 end)
 ```
+## TextBox
+Create Textbox
+```lua
+Tab:Textbox("a", "b", "c", function()
+   print("hi")
+end)
+```
+
 ## Example 
 Creat Example Script
 ```lua

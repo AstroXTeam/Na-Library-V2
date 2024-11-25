@@ -65,4 +65,43 @@ Main:Slider("hi", 0, 100, 30, function()
     
 end)
 ```
+## Example 
+Creat Example Script
+```lua
+local ui_link = "https://raw.githubusercontent.com/AstroXTeam/Na-Library-V2/refs/heads/main/Source.lua"
+local a = loadstring(game:HttpGet(ui_link))()
 
+local a = a:Window("AstroXHub [ 𝚃𝚛𝚘𝚕𝚕 ] ")
+
+local infoTab = a:Tab("Info", "rbxassetid://93092033322256")
+
+infoTab:Seperator("Astro Hub")
+
+
+infoTab:Label("Hi")
+
+infoTab:Textbox("a", "b", "c", function()
+   print("hi")
+end)
+
+
+
+
+infoTab:Button("Print Hi", function()
+   print("hi")
+end)
+
+infoTab:Slider("hi", 0, 100, 30, function()
+    Print("shit") 
+end)
+
+infoTab:Dropdown("Select", {"hey", "hi", "hellow"}, function()
+    print("hi")
+end)
+
+
+infoTab:Toggle("Print Hi", false, function()
+     print("hi")
+end)
+
+```

@@ -73,9 +73,17 @@ local Dropdown = Tab:AddDropdown({
 ## Slider
 Create a Slider
 ```lua
-Main:Slider("hi", 0, 100, 30, function()
+Tab:AddSlider({
+  Name = "Sluder",
+  Min = 80,
+  Max = 10000,
+  Increase = 1,
+  Default = 80,
+  Callback = function(Value)
     
-end)
+  end
+})
+
 ```
 
 ## TextBox

@@ -30,6 +30,12 @@ Create a Section
 ```lua
 local Section = Tab:AddSection({""})
 ```
+## Paragraph
+Creator a Paragraph 
+```lua
+local Paragraph = Tab:AddParagraph({"Info", "ok"})
+```
+
 
 ## Button
 Create a Button

@@ -1,8 +1,7 @@
 # Na Library V2 
 ## Library loadstring
 ```lua
-local ui_link = "https://raw.githubusercontent.com/AstroXTeam/Na-Library-V2/refs/heads/main/Source.lua"
-local a = loadstring(game:HttpGet(ui_link))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/AstroXTeam/Project-/refs/heads/main/V3.lua%20(1).txt"))()
 ```
 
 
@@ -11,51 +10,64 @@ local a = loadstring(game:HttpGet(ui_link))()
 ## Window
 Create a Window
 ```lua
-local a = a:Window("AstroXHub")
+local Window = Library:MakeWindow({
+    Title = "AstroXHub ",
+    SaveFolder = "Neption "
+});Window:AddMinimizeButton({
+    Button = {Image = "rbxassetid://101860525194150"},
+    Corner = {CornerRadius = UDim.new(0, 10)}
+})
 ```
 
 ## Tab
 Create a Tab
 ```lua
-local Tab = a:Tab("Tab", "rbxassetid://")
+local Tab = Window:MakeTab({"Tab", "rbxassetid://"})
 ```
 
 ## Section
 Create a Section
 ```lua
-Tab:Seperator("Astro Hub")
-```
-
-
-## Label
-Create a Text Label
-```lua
-Tab:Label("Hi")
+local Section = Tab:AddSection({""})
 ```
 
 ## Button
 Create a Button
 ```lua
-Tab:Button("Print Hi", function()
-   print("hi")
-end)
+local Button = Tab:AddButton({
+  Name = "",
+  Callback = function()
+    Print("Press") 
+  end
+})
+
 ```
 
 ## Toggle
 Create a Toggle
 ```lua
 local Toggle = Tab:AddToggle({
-Tab:Toggle("Print Hi", false, function()
-     print("hi")
-end)
+  Name = "sus",
+  Default = false,
+  Callback = function()
+
+  end
+})
+
 ```
 
 ## Dropdown
 Create a Dropdown
 ```lua
-Main:Dropdown("Select", {"hey", "hi", "hellow"}, function()
-    print("hi")
-end)
+local Dropdown = Tab:AddDropdown({
+  Name = "Dropdown",
+  Options = {"Section"},
+  Default = "", 
+  MultSelect = false,
+  Callback = function()
+
+  end
+})
 ```
 
 ## Slider
@@ -65,51 +77,22 @@ Main:Slider("hi", 0, 100, 30, function()
     
 end)
 ```
+
 ## TextBox
 Create Textbox
 ```lua
-Tab:Textbox("a", "b", "c", function()
-   print("hi")
-end)
+local TextBox = Tab:AddTextBox({
+  Name = "TextBox",
+  Description = "", 
+  Default = false,
+  Callback = function()
+
+end
+})
+
 ```
 
 ## Example 
 Creat Example Script
 ```lua
-local ui_link = "https://raw.githubusercontent.com/AstroXTeam/Na-Library-V2/refs/heads/main/Source.lua"
-local a = loadstring(game:HttpGet(ui_link))()
-
-local a = a:Window("AstroXHub [ 𝚃𝚛𝚘𝚕𝚕 ] ")
-
-local infoTab = a:Tab("Info", "rbxassetid://93092033322256")
-
-infoTab:Seperator("Astro Hub")
-
-
-infoTab:Label("Hi")
-
-infoTab:Textbox("a", "b", "c", function()
-   print("hi")
-end)
-
-
-
-
-infoTab:Button("Print Hi", function()
-   print("hi")
-end)
-
-infoTab:Slider("hi", 0, 100, 30, function()
-    Print("shit") 
-end)
-
-infoTab:Dropdown("Select", {"hey", "hi", "hellow"}, function()
-    print("hi")
-end)
-
-
-infoTab:Toggle("Print Hi", false, function()
-     print("hi")
-end)
-
 ```

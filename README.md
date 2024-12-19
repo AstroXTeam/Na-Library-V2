@@ -30,8 +30,9 @@ Create a Section
 ```lua
 local Section = Tab:AddSection({""})
 ```
+
 ## Paragraph
-Creator a Paragraph 
+Create a Paragraph 
 ```lua
 local Paragraph = Tab:AddParagraph({"Info", "ok"})
 ```
@@ -45,6 +46,26 @@ local Button = Tab:AddButton({
   Callback = function()
     Print("Press") 
   end
+})
+
+```
+
+## Dialog
+Create a Dialog
+```lua
+local Dialog = Window:Dialog({
+    Title = "Shit On player ",
+    Text = "Troll Player",
+    Options = {
+      {"Confirm", function()
+        
+      end},
+
+      {"Cancel", function()
+      end}
+    }
+  })
+end
 })
 
 ```
